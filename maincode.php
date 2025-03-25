@@ -1,3 +1,5 @@
+<?php
+
 // Shortcode to display product inventory progress bar
 function dynamic_inventory_progress_bar_shortcode($atts) {
     // Parse attributes with default product ID (current product)
