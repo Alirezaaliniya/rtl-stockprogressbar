@@ -1,7 +1,7 @@
 <?php
 
 // Shortcode to display product inventory progress bar
-function dynamic_inventory_progress_bar_shortcode($atts) {
+function nias_dynamic_inventory_progress_bar_shortcode($atts) {
     // Parse attributes with default product ID (current product)
     $atts = shortcode_atts(array(
         'product_id' => get_the_ID(), // Default to current product
@@ -67,7 +67,7 @@ function dynamic_inventory_progress_bar_shortcode($atts) {
     <?php
     return ob_get_clean();
 }
-add_shortcode('inventory_progress_bar', 'dynamic_inventory_progress_bar_shortcode');
+add_shortcode('nias_inventory_progress_bar', 'nias_dynamic_inventory_progress_bar_shortcode');
 
 // Optionally track original stock when product is first created
 function save_original_stock($post_id) {
