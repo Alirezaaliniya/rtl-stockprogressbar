@@ -1,0 +1,83 @@
+
+.amazing-card__progressbar__title {
+    display: block;
+    color: #333;
+    white-space: nowrap;
+}
+
+.amazing-card__progressbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+.progress {
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    direction: ltr;
+    height: 8px;
+    overflow: unset;
+    position: relative;
+    width: 100%
+}
+
+.progress-bar {
+    
+    background-color: #8ed457;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(149,226,90,.32);
+    flex-direction: column;
+    height: 6px;
+    overflow: hidden;
+    overflow: unset;
+    text-align: center;
+    transition: width .6s ease;
+    white-space: nowrap
+}
+
+.progress-bar,.amazing .progress__step {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.progress__step {
+        position: absolute;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    background-color: #ababab;
+    border-radius: 6px;
+    font-family: IRANSans,dana,Tahoma,sans-serif;
+    font-size: 14px;
+    height: 27px;
+    left: 100%;
+    margin-left: -16px;
+    min-width: 32px;
+    padding: 1px 5px;
+    top: -20px;
+    width: -moz-fit-content;
+    width: fit-content;
+    
+}
+
+.progress__step:before {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #ababab;
+    bottom: -6px;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0
+}
